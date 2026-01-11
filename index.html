@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="West Orange Plumbing Services - Professional plumbing solutions. Get 3 areas serviced for only $125. Contact us today for a free quote!">
+    <title>West Orange Plumbing Services | Professional Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container header-top-content">
+                <div class="logo">
+                    <h1>West Orange<br><span>Plumbing Services</span></h1>
+                </div>
+                <div class="header-info">
+                    <div class="availability-info">
+                        <div class="clock-icon">⚡</div>
+                        <div>
+                            <strong>24/7 AVAILABILITY</strong>
+                            <p>Fast Response Times</p>
+                            <p>Always Here When You Need Us</p>
+                        </div>
+                    </div>
+                    <div class="header-cta">
+                        <button class="btn-quote">GET FREE QUOTE</button>
+                        <div class="phone-info">
+                            <span class="call-label">Call Us Now!</span>
+                            <a href="tel:+15551234567" class="phone-number">(555) 123-4567</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">Professional Service</h2>
+                <p class="hero-subtitle">Expert Solutions in West Orange. Available 24/7!</p>
+                <a href="#services" class="btn-services">SERVICES</a>
+            </div>
+            <div class="hero-form-container">
+                <div class="form-card">
+                    <h3 class="form-title">Request a Service</h3>
+                    <p class="form-offer">Get Your Free Quote Today</p>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName"><span class="sr-only">Last Name</span><span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required>
+                            <span class="error-message" id="phoneError">Please enter a valid phone number.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">I want to know more about <span class="required">*</span></label>
+                            <select id="service" name="service" required>
+                                <option value="">Please Select</option>
+                                <option value="drain-cleaning">Drain Cleaning</option>
+                                <option value="pipe-repair">Pipe Repair</option>
+                                <option value="water-heater">Water Heater Service</option>
+                                <option value="leak-detection">Leak Detection</option>
+                                <option value="installation">Installation Services</option>
+                                <option value="emergency">Emergency Service</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="recaptcha-label">Please verify that you are human <span class="required">*</span></label>
+                            <div class="recaptcha-placeholder">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="humanVerify" required>
+                                    <span class="checkmark"></span>
+                                    <span>I'm not a robot</span>
+                                </label>
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn-submit">SEND</button>
+                        <div id="formSuccess" class="success-message">Thank you! We'll contact you soon.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="hero-cta">
+            <p class="cta-text">Get in touch with us</p>
+            <div class="cta-arrow">→</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Drain Cleaning</h3>
+                    <p>Professional drain cleaning services to keep your pipes flowing smoothly and prevent future blockages.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚰</div>
+                    <h3>Pipe Repair</h3>
+                    <p>Expert pipe repair and replacement solutions for residential and commercial properties.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Water Heater Service</h3>
+                    <p>Complete water heater installation, repair, and maintenance for all types and brands.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Leak Detection</h3>
+                    <p>Advanced leak detection services to identify and resolve hidden leaks quickly.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Installation Services</h3>
+                    <p>Complete installation services for fixtures, appliances, and plumbing systems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3>Emergency Service</h3>
+                    <p>24/7 emergency service with fast response times for urgent plumbing situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>West Orange Plumbing Services is your trusted partner for all plumbing needs in the West Orange area. We connect you with professional solutions quickly and efficiently, ensuring your plumbing issues are resolved promptly.</p>
+                <p>We pride ourselves on our commitment to excellence, reliability, and customer satisfaction. Whether it's a routine service call or an emergency situation, we're here to help you 24/7 with fast response times.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Phone:</strong>
+                    <a href="tel:+15551234567">(555) 123-4567</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Availability:</strong>
+                    <p>24/7 Emergency Service<br>Fast Response Times</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 West Orange Plumbing Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
