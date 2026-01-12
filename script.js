@@ -240,7 +240,7 @@
             console.error('Error submitting form:', error);
             
             // Show error message
-            alert('There was an error submitting your request. Please call us directly at (555) 123-4567.');
+            alert('There was an error submitting your request. Please call us directly at (201) 800-4098.');
             
             // Re-enable submit button
             submitButton.disabled = false;

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a free quote for plumbing services in West Orange. Fast, professional service with no obligation.">
+    <title>Free Quote | West Orange Plumbing Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .quote-hero {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.95), rgba(30, 58, 138, 0.9)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23334155" width="1200" height="800"/></svg>');
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 180px 20px 60px;
+        }
+        .quote-hero-content h1 {
+            font-size: 56px;
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        .quote-hero-content p {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.95);
+        }
+        .quote-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+        .quote-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .quote-benefits {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+        .quote-benefits h2 {
+            font-size: 32px;
+            color: var(--primary-blue);
+            margin-bottom: 30px;
+            font-weight: 800;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .benefit-icon {
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+        .benefit-text h3 {
+            font-size: 20px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .benefit-text p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        .quote-form-wrapper {
+            background: var(--white);
+            padding: 45px 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--medium-gray);
+        }
+        .quote-form-wrapper h2 {
+            font-size: 32px;
+            color: var(--primary-blue);
+            margin-bottom: 12px;
+            font-weight: 800;
+            text-align: center;
+        }
+        .quote-form-wrapper .form-subtitle {
+            text-align: center;
+            color: var(--orange);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .quote-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .quote-hero-content h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container header-top-content">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <h1>West Orange<br><span>Plumbing Services</span></h1>
+                    </a>
+                </div>
+                <div class="header-info">
+                    <div class="availability-info">
+                        <div class="clock-icon">⚡</div>
+                        <div>
+                            <strong>24/7 AVAILABILITY</strong>
+                            <p>Fast Response Times</p>
+                            <p>Always Here When You Need Us</p>
+                        </div>
+                    </div>
+                    <div class="header-cta">
+                        <a href="emergency-service.html" class="btn-quote" style="text-decoration: none;">EMERGENCY SERVICE</a>
+                        <div class="phone-info">
+                            <span class="call-label">Call Us Now!</span>
+                            <a href="tel:+12018004098" class="phone-number">(201) 800-4098</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Quote Hero -->
+    <section class="quote-hero">
+        <div class="quote-hero-content">
+            <h1>Get Your Free Quote</h1>
+            <p>No obligation • Fast response • Professional service</p>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-container">
+                <!-- Benefits -->
+                <div class="quote-benefits">
+                    <h2>Why Choose Us?</h2>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-text">
+                            <h3>Free, No-Obligation Quote</h3>
+                            <p>Get an accurate estimate with no pressure or hidden fees</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <div class="benefit-text">
+                            <h3>Fast Response Times</h3>
+                            <p>We respond quickly to all inquiries and service requests</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🔧</div>
+                        <div class="benefit-text">
+                            <h3>Professional Service</h3>
+                            <p>Expert solutions for all your plumbing needs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🕐</div>
+                        <div class="benefit-text">
+                            <h3>24/7 Availability</h3>
+                            <p>Emergency service available around the clock</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📞</div>
+                        <div class="benefit-text">
+                            <h3>Prefer to Call?</h3>
+                            <p><a href="tel:+12018004098" style="color: var(--orange); font-weight: 700; text-decoration: none;">(201) 800-4098</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="quote-form-wrapper">
+                    <h2>Request Your Quote</h2>
+                    <p class="form-subtitle">We'll get back to you soon</p>
+                    
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required>
+                            <span class="error-message" id="phoneError">Please enter a valid phone number.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed <span class="required">*</span></label>
+                            <select id="service" name="service" required>
+                                <option value="">Please Select</option>
+                                <option value="drain-cleaning">Drain Cleaning</option>
+                                <option value="pipe-repair">Pipe Repair</option>
+                                <option value="water-heater">Water Heater Service</option>
+                                <option value="leak-detection">Leak Detection</option>
+                                <option value="installation">Installation Services</option>
+                                <option value="emergency">Emergency Service</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your project</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe what you need help with..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="recaptcha-label">Please verify that you are human <span class="required">*</span></label>
+                            <div class="recaptcha-placeholder">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="humanVerify" required>
+                                    <span class="checkmark"></span>
+                                    <span>I'm not a robot</span>
+                                </label>
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn-submit">GET MY FREE QUOTE</button>
+                        <div id="formSuccess" class="success-message">Thank you! We'll contact you soon with your quote.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 West Orange Plumbing Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

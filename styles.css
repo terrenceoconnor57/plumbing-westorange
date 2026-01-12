@@ -72,7 +72,7 @@ body {
 
 .header-top {
     background: var(--white);
-    padding: 20px 0;
+    padding: 15px 0;
     border-bottom: 1px solid var(--medium-gray);
 }
 
@@ -81,7 +81,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .logo h1 {
@@ -103,54 +103,59 @@ body {
 .header-info {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .availability-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .clock-icon {
-    font-size: 32px;
+    font-size: 28px;
     color: var(--orange);
+    flex-shrink: 0;
 }
 
 .availability-info strong {
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     color: var(--text-dark);
     letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 .availability-info p {
-    font-size: 13px;
-    line-height: 1.3;
+    font-size: 11px;
+    line-height: 1.2;
     color: var(--text-light);
+    white-space: nowrap;
 }
 
 .header-cta {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn-quote {
     background: linear-gradient(135deg, var(--orange), var(--dark-orange));
     color: var(--white);
     border: none;
-    padding: 14px 28px;
+    padding: 12px 20px;
     border-radius: 30px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-md);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 .btn-quote:hover {
@@ -165,16 +170,18 @@ body {
 }
 
 .call-label {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--text-light);
+    white-space: nowrap;
 }
 
 .phone-number {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--primary-blue);
     text-decoration: none;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .phone-number:hover {
@@ -234,7 +241,7 @@ body {
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    padding-top: 180px;
+    padding-top: 200px;
     padding-bottom: 100px;
 }
 
@@ -698,20 +705,59 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .header-top-content {
-        flex-direction: column;
-        text-align: center;
+        gap: 15px;
     }
     
     .header-info {
+        gap: 20px;
+    }
+    
+    .logo h1 {
+        font-size: 26px;
+    }
+    
+    .availability-info p {
+        font-size: 10px;
+    }
+    
+    .phone-number {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-top-content {
         flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .header-info {
         width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-info {
+        flex-direction: column;
+        gap: 20px;
     }
     
     .phone-info {
         align-items: center;
     }
+    
+    .availability-info {
+        justify-content: center;
+    }
+    
+    .hero {
+        padding-top: 250px;
+    }
+}
     
     .nav-menu {
         gap: 20px;
