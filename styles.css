@@ -38,6 +38,8 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-width: 100%;
+    width: 100%;
 }
 
 .container {
@@ -74,6 +76,7 @@ body {
     background: var(--white);
     box-shadow: var(--shadow-md);
     backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 .header-top {
@@ -240,14 +243,14 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
+    width: 100%;
     background: linear-gradient(135deg, rgba(30, 64, 175, 0.95), rgba(30, 58, 138, 0.9)),
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23334155" width="1200" height="800"/></svg>');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
-    padding: 200px 20px 80px;
+    padding: 160px 20px 80px;
 }
 
 .hero-overlay {
@@ -768,9 +771,20 @@ body {
         padding: 10px 0;
     }
     
+    .header-top-content {
+        gap: 10px;
+    }
+    
     .header-info {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .header-cta {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
     }
     
     .phone-info {
@@ -790,59 +804,102 @@ body {
     }
     
     .clock-icon {
-        font-size: 24px;
+        font-size: 20px;
     }
     
     .btn-quote {
-        padding: 10px 18px;
-        font-size: 11px;
-    }
-    
-    .phone-number {
-        font-size: 18px;
-    }
-    
-    .call-label {
+        padding: 8px 14px;
         font-size: 10px;
     }
     
+    .phone-number {
+        font-size: 16px;
+    }
+    
+    .call-label {
+        font-size: 9px;
+    }
+    
+    .nav {
+        width: 100%;
+    }
+    
     .nav-menu {
-        gap: 20px;
+        gap: 15px;
         flex-wrap: wrap;
-        padding: 12px 0;
+        padding: 10px 0;
+        justify-content: center;
     }
     
     .nav-menu a {
-        font-size: 13px;
+        font-size: 12px;
     }
     
     .hero {
-        padding: 180px 15px 60px;
+        padding: 140px 15px 40px;
+        min-height: auto;
     }
     
     .hero-content {
         flex-direction: column;
         text-align: center;
-        gap: 40px;
+        gap: 30px;
     }
     
     .hero-text {
         min-width: auto;
+        width: 100%;
     }
     
     .hero-title {
-        font-size: 42px;
+        font-size: 32px;
+        margin-bottom: 15px;
     }
     
     .hero-subtitle {
-        font-size: 18px;
-        margin-bottom: 30px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-services {
+        padding: 12px 30px;
+        font-size: 13px;
     }
     
     .hero-form-container {
-        flex: 1;
+        flex: none;
         width: 100%;
         max-width: 100%;
+    }
+    
+    .form-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+    
+    .form-title {
+        font-size: 24px;
+    }
+    
+    .form-offer {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-form {
+        gap: 15px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 14px;
     }
     
     .hero-cta {
@@ -851,59 +908,86 @@ body {
     
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 25px 20px;
+    }
+    
+    .service-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .service-card h3 {
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
     }
     
     .contact-info {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .contact-item {
+        padding: 20px;
+        min-width: auto;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .logo h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .logo span {
-        font-size: 11px;
-    }
-    
-    .phone-number {
-        font-size: 16px;
-    }
-    
-    .btn-quote {
-        padding: 8px 16px;
         font-size: 10px;
     }
     
-    .hero {
-        padding-top: 200px;
-    }
-    
-    .hero-title {
-        font-size: 32px;
-    }
-    
-    .hero-subtitle {
-        font-size: 16px;
-    }
-    
-    .btn-services {
-        padding: 12px 32px;
+    .phone-number {
         font-size: 14px;
     }
     
-    .form-card {
-        padding: 25px 18px;
+    .btn-quote {
+        padding: 6px 12px;
+        font-size: 9px;
     }
     
-    .form-title {
+    .hero {
+        padding: 130px 10px 30px;
+    }
+    
+    .hero-title {
         font-size: 26px;
     }
     
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .btn-services {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+    
+    .form-card {
+        padding: 20px 15px;
+    }
+    
+    .form-title {
+        font-size: 20px;
+    }
+    
     .form-offer {
-        font-size: 18px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
     
     .form-row {
@@ -911,17 +995,21 @@ body {
     }
     
     .section-title {
-        font-size: 28px;
-        margin-bottom: 40px;
+        font-size: 24px;
+        margin-bottom: 25px;
     }
     
     .service-card {
-        padding: 30px 20px;
+        padding: 20px 15px;
     }
     
     .contact-item {
-        padding: 20px;
+        padding: 15px;
         min-width: auto;
+    }
+    
+    .about-content p {
+        font-size: 15px;
     }
 }
 
