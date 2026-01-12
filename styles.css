@@ -1,5 +1,7 @@
 /* Reset and Base Styles */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,17 +31,22 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
 }
 
 body {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
+    background-color: var(--white);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-width: 100%;
+    min-height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .container {
