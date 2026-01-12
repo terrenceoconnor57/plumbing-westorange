@@ -86,6 +86,11 @@ body {
     width: 100%;
 }
 
+/* Spacer to push content below fixed header */
+.header + * {
+    margin-top: 0;
+}
+
 .header-top {
     background: var(--white);
     padding: 15px 0;
@@ -257,7 +262,7 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 160px 20px 80px;
+    padding: 180px 20px 80px;
 }
 
 .hero-overlay {
@@ -843,7 +848,7 @@ body {
     }
     
     .hero {
-        padding: 260px 15px 40px;
+        padding: 280px 15px 40px;
         min-height: auto;
     }
     
