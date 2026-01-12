@@ -32,32 +32,46 @@ The contact form includes:
 - Required field checking
 - Human verification checkbox
 - Success/error messaging
-- Local storage of submissions (for demo purposes)
+- Email notifications via Vercel serverless function
 
-## Integration with Backend
+## Email Notifications Setup
 
-To connect the form to a real backend:
+The form automatically sends email notifications using Resend API via Vercel serverless functions.
 
-1. Replace the form submission handler in `script.js` (line ~180)
-2. Send data to your API endpoint:
+### Setup Instructions:
 
-```javascript
-// Example API integration
-fetch('https://your-api.com/submit', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData)
-})
-.then(response => response.json())
-.then(data => {
-    // Handle success
-})
-.catch(error => {
-    // Handle error
-});
-```
+1. **Sign up for Resend** (free tier available)
+   - Go to [https://resend.com](https://resend.com)
+   - Sign up for a free account
+   - Get your API key from the dashboard
+
+2. **Configure Environment Variables in Vercel**
+   - Go to your Vercel project settings
+   - Navigate to "Environment Variables"
+   - Add the following variables:
+     ```
+     RESEND_API_KEY=re_your_actual_api_key
+     TO_EMAIL=your-email@example.com
+     ```
+
+3. **Deploy to Vercel**
+   ```bash
+   vercel --prod
+   ```
+
+4. **Optional: Use Your Own Domain for Emails**
+   - In Resend dashboard, add and verify your domain
+   - Update `from` field in `api/send-email.js` to use your domain:
+     ```javascript
+     from: 'West Orange Plumbing <leads@yourdomain.com>'
+     ```
+
+### Email Features:
+- Professional HTML email template
+- All form data included
+- Clickable phone and email links
+- Timestamp with timezone
+- Urgent lead notification styling
 
 ## Google Ads Integration
 

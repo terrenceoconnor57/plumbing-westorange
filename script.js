@@ -191,21 +191,23 @@
             timestamp: new Date().toISOString()
         };
         
-        // Simulate form submission (replace with actual API call)
-        // In production, you would send this to your backend
-        console.log('Form submitted:', formData);
-        
-        // For demonstration, we'll store in localStorage
-        try {
-            const submissions = JSON.parse(localStorage.getItem('formSubmissions') || '[]');
-            submissions.push(formData);
-            localStorage.setItem('formSubmissions', JSON.stringify(submissions));
-        } catch (e) {
-            console.error('Error saving form data:', e);
-        }
-        
-        // Simulate network delay
-        setTimeout(function() {
+        // Send to Vercel serverless function
+        fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(function(response) {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(function(data) {
+            console.log('Email sent successfully:', data);
+            
             // Show success message
             successMessage.classList.add('visible');
             
@@ -233,8 +235,17 @@
             if (typeof fbq !== 'undefined') {
                 fbq('track', 'Lead');
             }
+        })
+        .catch(function(error) {
+            console.error('Error submitting form:', error);
             
-        }, 1500);
+            // Show error message
+            alert('There was an error submitting your request. Please call us directly at (555) 123-4567.');
+            
+            // Re-enable submit button
+            submitButton.disabled = false;
+            submitButton.textContent = 'SEND';
+        });
     }
     
     // Lazy load background image for better performance
