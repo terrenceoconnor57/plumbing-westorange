@@ -3,7 +3,7 @@
 ## Sitelink Pages Created
 
 ### 1. Emergency Service (`emergency-service.html`)
-**URL**: `https://yourdomain.com/emergency-service.html`
+**URL**: `https://yourdomain.com/emergency-service`
 
 **Sitelink Text**: "24/7 Emergency Service"
 **Description**: "Fast response for urgent plumbing issues. Available around the clock."
@@ -18,7 +18,7 @@
 ---
 
 ### 2. Free Quote (`free-quote.html`)
-**URL**: `https://yourdomain.com/free-quote.html`
+**URL**: `https://yourdomain.com/free-quote`
 
 **Sitelink Text**: "Get Free Quote"
 **Description**: "No obligation estimate. Fast response with professional service."
@@ -48,13 +48,13 @@
 - Sitelink text: `24/7 Emergency Service`
 - Description line 1: `Fast response for urgent issues`
 - Description line 2: `Available around the clock`
-- Final URL: `https://yourdomain.com/emergency-service.html`
+- Final URL: `https://yourdomain.com/emergency-service`
 
 **Sitelink 2:**
 - Sitelink text: `Get Free Quote`
 - Description line 1: `No obligation estimate`
 - Description line 2: `Professional service guaranteed`
-- Final URL: `https://yourdomain.com/free-quote.html`
+- Final URL: `https://yourdomain.com/free-quote`
 
 ### Step 3: Additional Recommended Sitelinks
 
