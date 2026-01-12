@@ -806,29 +806,28 @@ body {
         font-size: 10px;
     }
     
-    .hero {
-        padding-top: 220px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .hero-content {
-        gap: 40px;
-    }
-}
-    
     .nav-menu {
         gap: 20px;
         flex-wrap: wrap;
+        padding: 12px 0;
+    }
+    
+    .nav-menu a {
+        font-size: 13px;
     }
     
     .hero {
-        padding-top: 200px;
+        padding: 180px 15px 60px;
     }
     
     .hero-content {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
+    }
+    
+    .hero-text {
+        min-width: auto;
     }
     
     .hero-title {
@@ -836,13 +835,18 @@ body {
     }
     
     .hero-subtitle {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 30px;
     }
     
     .hero-form-container {
         flex: 1;
         width: 100%;
-        max-width: 500px;
+        max-width: 100%;
+    }
+    
+    .hero-cta {
+        display: none;
     }
     
     .services-grid {
@@ -851,7 +855,7 @@ body {
     
     .contact-info {
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
     }
 }
 
