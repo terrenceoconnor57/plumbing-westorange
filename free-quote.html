@@ -112,12 +112,52 @@
             margin-bottom: 30px;
         }
         @media (max-width: 768px) {
+            .quote-hero {
+                padding: 180px 15px 40px;
+            }
+            
             .quote-container {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
+            
             .quote-hero-content h1 {
                 font-size: 38px;
+            }
+            
+            .quote-section {
+                padding: 60px 0;
+            }
+            
+            .quote-benefits {
+                padding: 30px 20px;
+            }
+            
+            .quote-form-wrapper {
+                padding: 35px 25px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .quote-hero {
+                padding: 160px 15px 40px;
+            }
+            
+            .quote-hero-content h1 {
+                font-size: 32px;
+            }
+            
+            .quote-hero-content p {
+                font-size: 16px;
+            }
+            
+            .quote-benefits h2,
+            .quote-form-wrapper h2 {
+                font-size: 26px;
+            }
+            
+            .benefit-item {
+                margin-bottom: 20px;
             }
         }
     </style>
